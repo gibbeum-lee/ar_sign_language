@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/ChooseMe.unity
+    guid: ad443f579c8d857468af97be924d4714
+  - enabled: 1
     path: Assets/Scenes/AndroidMaker.unity
     guid: 95e16742b5372a34f9dbfd8a65e9d236
   m_configObjects:

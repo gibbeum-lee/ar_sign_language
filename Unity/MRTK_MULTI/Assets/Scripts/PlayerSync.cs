@@ -20,7 +20,6 @@ public class PlayerSync : MonoBehaviourPun, IPunObservable
         tr = GetComponent<Transform>();
         pv = GetComponent<PhotonView>();
         camTr = Camera.main.transform;
-
     }
 
     // Update is called once per frame

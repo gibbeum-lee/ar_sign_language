@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/AndroidMaker.unity
+- path: Assets/Scenes/ChooseMe.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

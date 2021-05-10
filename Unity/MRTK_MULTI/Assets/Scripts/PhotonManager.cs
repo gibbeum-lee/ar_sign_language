@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using System;
 
 public class PhotonManager : MonoBehaviourPunCallbacks
 {
@@ -43,7 +44,14 @@ public class PhotonManager : MonoBehaviourPunCallbacks
 
         Debug.Log("Entered Room!!");
         //아바타를 생성
-
-        PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity, 0);
+        if (PlayerPrefs.GetInt("AvatarType") == 1)
+        {
+            PhotonNetwork.Instantiate("Me_1", Vector3.zero, Quaternion.identity, 0);
+        }
+        else if (PlayerPrefs.GetInt("AvatarType") == 2)
+        {
+            PhotonNetwork.Instantiate("Me_2", Vector3.zero, Quaternion.identity, 0);
+        }
+        //PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity, 0);
     }
 }
